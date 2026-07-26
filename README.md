@@ -6,5 +6,10 @@ prototype-key hazards.
 ```ts
 import { countBy } from "@lucid-softworks/array-count-by";
 
+const messages = [
+  { level: "info", text: "Started" },
+  { level: "error", text: "Failed" },
+  { level: "info", text: "Retried" },
+];
 countBy(messages, (message) => message.level);
 ```
